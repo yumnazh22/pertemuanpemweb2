@@ -1,10 +1,7 @@
-<?php include_once 'layouts/header.php' ?>
-<?php include_once 'layouts/sidebar.php' ?>
-
-
-
+@include('admin.header')
+@include('admin.sidebar')
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -28,7 +25,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Catatan</h3>
+          <h3 class="card-title">Title</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -40,11 +37,11 @@
           </div>
         </div>
         <div class="card-body">
-          Selamat datang di website kami
+          Start creating your amazing application!
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-          Halooooo
+          Footer
         </div>
         <!-- /.card-footer-->
       </div>
@@ -54,4 +51,5 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <?php include_once 'layouts/footer.php' ?>
+
+  @include('admin.footer')
